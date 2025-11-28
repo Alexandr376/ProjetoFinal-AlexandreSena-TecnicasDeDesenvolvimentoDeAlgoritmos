@@ -1,0 +1,42 @@
+Algoritmo Biblioteca_Online
+
+Incluir arquivo config.php
+
+Exibir página com menu principal contendo:
+    → Home
+    → Livros {Cadastrar, Listar}
+    → Autores {Cadastrar, Listar}
+
+Ler variável PAGE a partir da URL
+
+Escolha (PAGE):
+
+    Caso "cadastrar-livro":
+        Chamar cadastrar-livro.php
+    
+    Caso "listar-livro":
+        Chamar listar-livro.php
+
+    Caso "editar-livro":
+        Chamar editar-livro.php
+
+    Caso "salvar-livro":
+        Chamar salvar-livro.php
+
+    Caso "cadastrar-autores":
+        Chamar cadastrar-autores.php
+
+    Caso "listar-autores":
+        Chamar listar-autores.php
+
+    Caso "editar-autores":
+        Chamar editar-autores.php
+
+    Caso "salvar-autores":
+        Chamar salvar-autores.php
+
+    Outro caso:
+        Exibir mensagem "Seja Bem Vindo"
+
+FimEscolha
+FimAlgoritmo
