@@ -1,0 +1,54 @@
+ ┌─────────────┐
+ │   INÍCIO    │
+ └─────┬───────┘
+       ▼
+ ┌──────────────────────┐
+ │ Carregar interface   │
+ │ (HTML/Bootstrap)      │
+ └─────────┬────────────┘
+           ▼
+ ┌──────────────────────┐
+ │ Ler parâmetro 'page' │
+ └─────────┬────────────┘
+           ▼
+   ┌───────────────┐
+   │ page existe?  │
+   └─────┬─────────┘
+         │SIM
+         ▼
+ ┌─────────────────────────────┐
+ │ page = cadastrar-livro?     │─► inclui cadastrar-livro.php
+ └─────────────────────────────┘
+ ┌─────────────────────────────┐
+ │ page = listar-livro?        │─► inclui listar-livro.php
+ └─────────────────────────────┘
+ ┌─────────────────────────────┐
+ │ page = editar-livro?        │─► inclui editar-livro.php
+ └─────────────────────────────┘
+ ┌─────────────────────────────┐
+ │ page = salvar-livro?        │─► inclui salvar-livro.php
+ └─────────────────────────────┘
+ ┌─────────────────────────────┐
+ │ page = cadastrar-autores?   │─► inclui cadastrar-autores.php
+ └─────────────────────────────┘
+ ┌─────────────────────────────┐
+ │ page = listar-autores?      │─► inclui listar-autores.php
+ └─────────────────────────────┘
+ ┌─────────────────────────────┐
+ │ page = editar-autores?      │─► inclui editar-autores.php
+ └─────────────────────────────┘
+ ┌─────────────────────────────┐
+ │ page = salvar-autores?      │─► inclui salvar-autores.php
+ └─────────────────────────────┘
+         │
+         ▼
+       NÃO
+         |
+         ▼
+ ┌──────────────────────────┐
+ │ Mostrar "Seja Bem Vindo" │
+ └─────────┬────────────────┘
+           ▼
+        ┌───────┐
+        │  FIM  │
+        └───────┘
