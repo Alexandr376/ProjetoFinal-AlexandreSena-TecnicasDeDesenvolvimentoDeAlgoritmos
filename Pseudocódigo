@@ -1,0 +1,34 @@
+INÍCIO
+
+    CARREGAR interface HTML e CSS
+    EXIBIR menu com opções:
+        - Home
+        - Livros (Cadastrar/Listar)
+        - Autores (Cadastrar/Listar)
+
+    IMPORTAR arquivo config.php (conexão com banco)
+
+    LER parâmetro 'page' enviado pela URL
+
+    SE page = "cadastrar-livro" ENTÃO
+         ABRIR arquivo cadastrar-livro.php
+    SENÃO SE page = "listar-livro" ENTÃO
+         ABRIR arquivo listar-livro.php
+    SENÃO SE page = "editar-livro" ENTÃO
+         ABRIR arquivo editar-livro.php
+    SENÃO SE page = "salvar-livro" ENTÃO
+         ABRIR arquivo salvar-livro.php
+
+    SENÃO SE page = "cadastrar-autores" ENTÃO
+         ABRIR arquivo cadastrar-autores.php
+    SENÃO SE page = "listar-autores" ENTÃO
+         ABRIR arquivo listar-autores.php
+    SENÃO SE page = "editar-autores" ENTÃO
+         ABRIR arquivo editar-autores.php
+    SENÃO SE page = "salvar-autores" ENTÃO
+         ABRIR arquivo salvar-autores.php
+
+    SENÃO
+         EXIBIR mensagem "Seja bem vindo"
+
+FIM
